@@ -69,12 +69,23 @@ function top() {
 		
 			echo"</div>";
 			
-			
-	 
+?>			
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 	
+	  	<script>
+	$(document).ready(function(){
+
+
+
+	
+	$("#div1").click(function(){
+  	$("#div2").slideToggle("fast");
+});
+}); 
+
 	  
 	 
 	  
-	  
+<?php	  
 	
 	  echo"  </body>\n";
       echo"</html>\n";

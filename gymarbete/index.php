@@ -1,7 +1,7 @@
 <?php
 
-include_once("startend.php");
 
+include_once("startend.php");
 
 
 top();
