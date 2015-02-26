@@ -30,7 +30,7 @@ function top() {
       
 	  
 	  
-		echo"<div id=\"header\" class=\"container\">"	 
+		echo"<div id=\"header\" class=\"container\">";	 
 
 			 
 			
