@@ -30,17 +30,17 @@ function top() {
       
 	  
 	  
-		echo"<div id=\"header\" class=\"container\">"	 
+		echo"<div id=\"header\" class=\"container\">";	 
 
 			 
 			
 			echo"<div id=\"menu\">";
 				echo"<ul>";
-					echo"<li class=\"active\"><a href=\"#\" accesskey=\"1\" title=\"\">Homepage</a></li>";
-					echo"<li><a href=\"#\" accesskey=\"2\" title=\"\">Our Clients</a></li>";
-					echo"<li><a href=\"#\" accesskey=\"3\" title=\"\">About Us</a></li>";
-					echo"<li><a href=\"#\" accesskey=\"4\" title=\"\">Careers</a></li>";
-					echo"<li><a href=\"#\" accesskey=\"5\" title=\"\">Contact Us</a></li>";
+					echo"<li class=\"active\"><a href=\"index.php\" accesskey=\"1\" title=\"\">Hem</a></li>";
+					echo"<li><a href=\"galleri.php\" accesskey=\"2\" title=\"\">Galleri</a></li>";
+					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
+					echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
+					
 						
 				echo"</ul>";
 
@@ -70,9 +70,6 @@ function top() {
 			echo"</div>";
 			
 			
-				
-			echo"</div>\n";   //stänger box taggen
-      
 	 
 	  
 	 
