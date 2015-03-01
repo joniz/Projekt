@@ -12,5 +12,6 @@ echo "<img class=\"bildomoss\" src=\"uploads\ismet.jpg\"></img>";
 echo "<img class=\"bildomoss2\" src=\"uploads\miki.jpg\"></img>";
 
 
+
 bottom();
 ?>
