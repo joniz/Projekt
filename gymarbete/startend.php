@@ -13,6 +13,7 @@ function top() {
 		echo"<link href=\"fonts.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />";
 	 
 ?>
+	 
 	 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	 
 	 
