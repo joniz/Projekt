@@ -11,6 +11,5 @@ echo "<p>Vi går på teknikprogrammet och för vårat gymnasie kände vi för at
 echo "<img class=\"bildomoss\" src=\"uploads\ismet.jpg\"></img>";
 echo "<img class=\"bildomoss2\" src=\"uploads\miki.jpg\"></img>";
 
-
 bottom();
 ?>
