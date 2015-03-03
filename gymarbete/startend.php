@@ -45,8 +45,7 @@ function top() {
 						
 				echo"</ul>";
 
-                echo"<div id =\"div1\">Logga in</div>";
-                echo"<div id =\"div3\"></div>";
+                
 				echo"<a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
 				
 			echo"</div>";
