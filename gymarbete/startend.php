@@ -41,7 +41,17 @@ function top() {
     echo"<div class=\"face\"><a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
     
     echo"</div>";
-        echo"<div id =\"div2\">
+       
+        echo"</div>";
+		
+		
+		
+			
+	
+	
+			echo"<div id=\"content\">\n";
+		
+     echo"<div id =\"div2\">
         <form method = \"POST\" action = \"check.php\" name=\"login\">\n";
 
   				echo"<fieldset>\n";
@@ -54,14 +64,6 @@ function top() {
   				echo"</form>";
         
         echo"</div>";
-		echo"</div>";
-		
-		
-		
-			
-	
-	
-			echo"<div id=\"content\">\n";
 		
 		}
 

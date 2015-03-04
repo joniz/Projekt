@@ -785,21 +785,11 @@
 		text-align: center;
 		color: #FFFFFF;
 	}
-    #div1{
-        width: 100;
-	   height: 10px;
-        padding-top: 0.8em;
-	   
-         
-        
-    }
-    #div2{
-        overflow: visible;
-        color: aqua;
-        border: black 0px;
+  #div2{ 
         display: none;
-	   height: 40px;
-        width: 100px;
+	    position: fixed;
+        width: 30px;
+        height: 30px;
     }
 	
 	
