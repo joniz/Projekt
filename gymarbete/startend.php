@@ -42,14 +42,19 @@ function top() {
 					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
 					echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
 					
-						
 				echo"</ul>";
-
                 
-				echo"<a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
-				
-			echo"</div>";
-
+               	
+        echo"</div>";
+        echo"<div class=\"logg\">";        
+    
+				echo"<div id =\"div1\">LOGGA IN</div>";
+	           	echo"<div id =\"div2\"></div>";
+	echo"</div>";
+    echo"<div class=\"face\"><a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
+    
+    echo"</div>";
+    
 		echo"</div>";
 		
 		
