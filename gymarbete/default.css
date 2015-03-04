@@ -796,6 +796,7 @@
     #div2{
         overflow: visible;
         color: aqua;
+        border: black 0px;
         display: none;
 	   height: 40px;
         width: 100px;

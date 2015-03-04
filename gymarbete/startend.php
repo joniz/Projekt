@@ -39,12 +39,24 @@ function top() {
         echo"<div class=\"logg\">";        
     
 				echo"<div id =\"div1\">LOGGA IN</div>";
-	           	echo"<div id =\"div2\"></div>";
+	           	
 	echo"</div>";
     echo"<div class=\"face\"><a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
     
     echo"</div>";
-    
+        echo"<div id =\"div2\">
+        <form method = \"POST\" action = \"check.php\" name=\"login\">\n";
+
+  				echo"<fieldset>\n";
+      		    echo"<label for = \"username\">Användarnamn</label>\n";
+      			echo"<input type =\"text\" name = \"username\">\n"; 
+      			echo"<label for = \"password\">Lösenord</label>\n";
+      			echo"<input type = \"password\" name=\"password\">\n"; 
+      			echo"<button>Logga in</button>\n";
+  				echo"</fieldset>\n";
+  				echo"</form>";
+        
+        echo"</div>";
 		echo"</div>";
 		
 		
@@ -62,21 +74,20 @@ function bottom() {
 echo"</div>";
 			
 ?>			
-    <script         src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">     </script> 	
-	  	<script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">     </script> 	
+
+<script>
 	$(document).ready(function(){
 
 
 
-	
 	$("#div1").click(function(){
   	$("#div2").slideToggle("fast");
 });
 }); 
-
+</script>
 	  
 	 
-	  
 <?php	  
 	
 	  echo"  </body>\n";
