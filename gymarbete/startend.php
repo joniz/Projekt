@@ -14,17 +14,7 @@ function top() {
 	 
 ?>
 	 
-	 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	 
-	 
-	 <script>
-	$(document).ready(function(){
-			
-			
-			
-	});
-		</script>
-	 
+	
 <?php  
   echo"</head>\n";
       echo"<body>\n";
@@ -67,16 +57,12 @@ function top() {
 		}
 
 		
-		
-		
-		
-		
-			function bottom() {
-		
-			echo"</div>";
+function bottom() {
+
+echo"</div>";
 			
 ?>			
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 	
+    <script         src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">     </script> 	
 	  	<script>
 	$(document).ready(function(){
 
