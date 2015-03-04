@@ -381,26 +381,14 @@
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
-	.test img{
-		padding-top: 0.3em;
-        height: 40px;
-        
+	.test{
+		margin-left:70%;
 	}
-.logg{
-    
-    float:left;
-    
-}
-.face{
-    
-    float: right;
-    padding-right: 1em;
-    
-}
+
+
 
 	#menu img{
-		
-        
+		height: 20px;
 	}
 
 	#menu
@@ -408,8 +396,7 @@
 		color: #000000;
 		text-align: left;
 		padding-top: 1em;
-		border: solid 1px #000000;
-        float:left;
+		border: solid 1px #000000; 
 	}
 	
 	#menu ul
@@ -782,16 +769,8 @@
 		color: #FFFFFF;
 	}
     #div1{
-        width: 50px;
-	   height: 20px;
-	   background-color: red;
-        margin-left: left; 
-        
-    }
-    #div2{
-        display: none;
-	   height: 50px;
-	   width: 100px;
+        color: white;
+        text-align: right;
     }
 	
 	
