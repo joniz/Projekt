@@ -785,11 +785,18 @@
 		text-align: center;
 		color: #FFFFFF;
 	}
-  #div2{ 
-        display: none;
+
+#div2{ 
+        border: solid black 5px;
 	    position: fixed;
-        width: 30px;
-        height: 30px;
+        
+        
+    }
+    form{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 	
 	

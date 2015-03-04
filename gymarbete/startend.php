@@ -51,7 +51,7 @@ function top() {
 	
 			echo"<div id=\"content\">\n";
 		
-     echo"<div id =\"div2\">
+    /* echo"<div id =\"div2\">
         <form method = \"POST\" action = \"check.php\" name=\"login\">\n";
 
   				echo"<fieldset>\n";
@@ -64,7 +64,7 @@ function top() {
   				echo"</form>";
         
         echo"</div>";
-		
+		*/
 		}
 
 		
