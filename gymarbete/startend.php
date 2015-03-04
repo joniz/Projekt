@@ -31,16 +31,13 @@ function top() {
 					echo"<li><a href=\"galleri.php\" accesskey=\"2\" title=\"\">Galleri</a></li>";
 					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
 					echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
-					
+	               	echo"<li id = \"logga\"><a href=\"\" accesskey=\"5\" title=\"\">Logga in</a></li>"; 			
+    
 				echo"</ul>";
                 
                	
         echo"</div>";
-        echo"<div class=\"logg\">";        
-    
-				echo"<div id =\"div1\">LOGGA IN</div>";
-	           	
-	echo"</div>";
+        
     echo"<div class=\"face\"><a class =\"test\" 	href=\"\"><img src=\"fbliten.png\"></a>";
     
     echo"</div>";
@@ -81,7 +78,7 @@ echo"</div>";
 
 
 
-	$("#div1").click(function(){
+	$("#logga").click(function(){
   	$("#div2").slideToggle("fast");
 });
 }); 
