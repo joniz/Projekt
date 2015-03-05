@@ -38,17 +38,22 @@ function top() {
 
 	if($_SESSION['admin']){
 
-	echo"<li id = \"logga\">LOGGA UT</li>";
+	echo"<li><a href = \"logout.php\" name = \"action\" value = \"logout\">LOGGA UT</a></li>";
 	
 	
 	}
 
 	else{
-            echo"<li action=\"logout.php\" id=\"logga\">LOGGA IN </li>";
+            echo"<li><a id = \"logga\">LOGGA IN</a></li>";
  }
 }else{
-    echo"<li id = \"logga\">LOGGA IN</li>";
-                        }
+    echo"<li><a id = \"logga\">LOGGA IN</a></li>";
+                     
+                        
+                       
+
+                  
+                    }
 	               	 			
     
 				echo"</ul>";
@@ -96,7 +101,8 @@ echo"</div>";
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">     </script> 	
 
 <script>
-	$(document).ready(function(){
+	
+    $(document).ready(function(){
 
 
 

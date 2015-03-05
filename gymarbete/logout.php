@@ -1,7 +1,7 @@
 <?php
 session_start();
 	
-if($_POST['action']=='logout'){
+if(isset($_SESSION['admin'])){
 unset($_SESSION['user']);
 unset($_SESSION['admin']);    
 header('Location: index.php'); 
