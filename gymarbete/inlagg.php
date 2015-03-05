@@ -4,8 +4,8 @@ include_once("startend.php");
 
 top();
 
-
-echo"<form action=\"upload.php\" method=\"post\" enctype=\"multipart/form-data\">";
+if(isset($_SESSION['admin'])){
+    echo"<form action=\"upload.php\" method=\"post\" enctype=\"multipart/form-data\">";
    echo"<p>Select image to upload:<p>";
     echo"<input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">";
 echo"<label for=\"rubrik\" class=\"uploadlabel\">rubrik</label>";
@@ -16,6 +16,11 @@ echo"<input type=\"textarea\" name=\"text\" id=\"text\">";
 
     echo"<input type=\"submit\" value=\"Upload Image\" name=\"submit\">";
 echo"</form>";
+
+}else{
+    echo"<p>Du får inte vara här</p>";
+}
+
 
 
 
