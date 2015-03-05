@@ -44,17 +44,11 @@ function top() {
 	}
 
 	else{
-
-	
-
-	echo"<li action=\"logout.php\" id=\"logga\">LOGGA IN </li>";
-
-	
-
-	}
-}else{echo"<li id = \"logga\">LOGGA IN</li>";
-                        
-                    }
+            echo"<li action=\"logout.php\" id=\"logga\">LOGGA IN </li>";
+ }
+}else{
+    echo"<li id = \"logga\">LOGGA IN</li>";
+                        }
 	               	 			
     
 				echo"</ul>";
