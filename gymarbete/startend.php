@@ -51,7 +51,7 @@ function top() {
 
 	}
 }
-	               	echo"<li id = \"logga\">LOGGA IN </li>"; 			
+	               	 			
     
 				echo"</ul>";
                 

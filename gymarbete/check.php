@@ -7,12 +7,19 @@ $losen =$_POST['password'];
 if(!$anv==''&&!$losen==''){
 	require_once "connectme.php";
 
+	
+
+	echo $anv;
+	echo $losen;
+
 	$dbh = db_connect();
 		$sth = $dbh->prepare('SELECT anv_id,anv_admin FROM tbl_anv WHERE anv_alias=:alias123 AND anv_losenord=:losenord123');
 		$sth->execute(array(':alias123'=>$anv, ':losenord123'=>$losen));
 		$affected_rows = $sth->rowCount();
 		$svar = $sth->fetch(PDO::FETCH_ASSOC);
 	$dbh = NULL;
+
+
 
 	if($affected_rows == 1){
 		$_SESSION['user'] = $svar['anv_id'];
