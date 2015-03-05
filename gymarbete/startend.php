@@ -31,7 +31,7 @@ function top() {
 					echo"<li><a href=\"galleri.php\" accesskey=\"2\" title=\"\">Galleri</a></li>";
 					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
 					echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
-	               	echo"<li id = \"logga\"><a href=\"\" accesskey=\"5\" title=\"\">Logga in</a></li>"; 			
+	               	echo"<li id = \"logga\">LOGGA IN </li>"; 			
     
 				echo"</ul>";
                 
@@ -52,8 +52,8 @@ function top() {
 			echo"<div id=\"content\">\n";
 		
      echo"<div id =\"div2\">
-        <form method = \"POST\" action = \"check.php\" name=\"login\">\n";
-
+        <form method = \"POST\" action = \"check.php\" name=\"login\" class =\"Login\">\n";
+    
   				echo"<fieldset>\n";
       		    echo"<label for = \"username\">Användarnamn</label>\n";
       			echo"<input type =\"text\" name = \"username\">\n"; 
@@ -64,8 +64,10 @@ function top() {
   				echo"</form>";
         
         echo"</div>";
-		echo"</div>";
-		}
+		
+        echo"</div>";
+		
+        }
 
 		
 function bottom() {
