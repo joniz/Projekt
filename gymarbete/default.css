@@ -39,130 +39,23 @@
 		color: #000000;
 	}
 	
-	strong
-	{
-	}
-	
-	/*a
-	{
-		color: #000000;
-	}*/
-	
-	a:hover
-	{
-		
-	}
-	
-
 	.container
 	{
 		margin: 0px auto;
 		width: 100%;
 	}
-	
-
-/*********************************************************************************/
-/* Form Style                                                                    */
-/*********************************************************************************/
-
-			
-		
-			form label
-			{
-				display: block;
-				
-				margin-bottom: 0.5em;
-			}
-			
-			form .submit
-			{
-				margin-top: 2em;
-				line-height: 1.5em;
-				font-size: 1.3em;
-			}
-		
-			form input.text,
-			form select,
-			form textarea
-			{
-				position: relative;
-				-webkit-appearance: none;
-				display: block;
-				border: 0;
-				background: #fff;
-				background: rgba(255,255,255,0.75);
-				width: 100%;
-				border-radius: 0.50em;
-				margin: 1em 0em;
-				padding: 1.50em 1em;
-				box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
-				border: solid 1px rgba(0,0,0,0.15);
-				-moz-transition: all 0.35s ease-in-out;
-				-webkit-transition: all 0.35s ease-in-out;
-				-o-transition: all 0.35s ease-in-out;
-				-ms-transition: all 0.35s ease-in-out;
-				transition: all 0.35s ease-in-out;
-				font-size: 1em;
-				outline: none;
-			}
-
-				form input.text:hover,
-				form select:hover,
-				form textarea:hover
-				{
-				}
-
-				form input.text:focus,
-				form select:focus,
-				form textarea:focus
-				{
-					box-shadow: 0 0 2px 1px #E0E0E0;
-					background: #fff;
-				}
-				
-				form textarea
-				{
-					min-height: 12em;
-				}
-
-				form .formerize-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-webkit-input-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form :-moz-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-moz-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form :-ms-input-placeholder
-				{
-					color: #555 !important;
-				}
-
-				form ::-moz-focus-inner
-				{
-					border: 0;
-				}
-
-
-/*********************************************************************************/
-/* Image Style                                                                   */
-/*********************************************************************************/
-
-	.bildomoss{
-
-	-webkit-border-radius: 1px; border-radius:20px;
+	form label
+    {
+    display: block;
+    }
+    form .submit
+    {
+	margin-top: 2em;
+	line-height: 1.5em;
+	font-size: 1.3em;
+    }
+    .bildomoss{
+    -webkit-border-radius: 1px; border-radius:20px;
 	/*float: right;*/
 	width: 25%;
 	
@@ -176,60 +69,7 @@
 	margin-bottom: 8.5em;
 	
    	}
-
-
-
-	.image
-	{
-		display: inline-block;
-		border: 1px solid rgba(0,0,0,.1);
-	}
-	
-	.image img
-	{
-		display: block;
-		width: 100%;
-	}
-	
-	.image-full
-	{
-		display: block;
-		width: 100%;
-		margin: 0 0 3em 0;
-	}
-	
-	.image-left
-	{
-		float: left;
-		margin: 0 2em 2em 0;
-	}
-	
-	.image-centered
-	{
-		display: block;
-		margin: 0 0 2em 0;
-	}
-	
-	.image-centered img
-	{
-		margin: 0 auto;
-		width: auto;
-	}
-
-/*********************************************************************************/
-/* List Styles                                                                   */
-/*********************************************************************************/
-
-	ul.style1
-	{
-	}
-
-
-/*********************************************************************************/
-/* Social Icon Styles                                                            */
-/*********************************************************************************/
-
-	ul.contact
+    ul.contact
 	{
 		margin: 0;
 		padding: 2em 0em 0em 0em;
@@ -492,37 +332,9 @@
 /* Welcome                                                                       */
 /*********************************************************************************/
 
-	#welcome
-	{
-		overflow: hidden;
-		width: 1200px;
-		padding: 2em 0px 0em 0px;
-		text-align: center;
-	}
 	
-	#welcome .content
-	{
-		padding: 0em 8em;
-	}
 	
-		#welcome .image
-		{
-			display: block;
-			padding-top: 3em;
-			border: none;
-		}
-
-	#welcome .title h2
-	{
-		color: #FFF;
-	}
 	
-	#welcome a,
-	#welcome strong
-	{
-		color: #C6C2C4;
-	}
-
 /*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
@@ -545,7 +357,7 @@
 
 	#content
 	{
-		padding-top:80px;
+		padding-top: 50px;
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
@@ -785,7 +597,7 @@
 
 #div2{ 
         
-        
+        margin-left: 180px; 
         border: solid black 5px;
 	    position: fixed;
         display: none;
@@ -817,8 +629,8 @@
 				color: #000000;
 
 			}
-    .loginlabe{
-				color: #FFFFFF;
-                
-			}    
+    .inlagg{
+        margin-left: auto;
+        margin-right: auto;
+    }
 	

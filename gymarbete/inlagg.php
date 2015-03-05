@@ -4,7 +4,7 @@ include_once("startend.php");
 top();
 
 
-echo"<form action=\"upload.php\" method=\"post\" enctype=\"multipart/form-data class = \"inlagg\">";
+echo"<form action=\"upload.php\" method=\"post\" enctype=\"multipart/form-data\">";
    echo"<p>Select image to upload:<p>";
     echo"<input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">";
 echo"<label for=\"rubrik\" class=\"uploadlabel\">rubrik</label>";
