@@ -65,10 +65,7 @@
 /* Form Style                                                                    */
 /*********************************************************************************/
 
-			label{
-				color: #000000;
-
-			}
+			
 		
 			form label
 			{
@@ -787,17 +784,42 @@
 	}
 
 #div2{ 
+        
+        
         border: solid black 5px;
 	    position: fixed;
         display: none;
+        background-color: black;
         
-        
-    }
+}
     form{
         width: 500px;
         margin-left: auto;
         margin-right: auto;
         
     }
-	
+	#logga{
+        padding: 0em 1.5em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 200;
+		text-transform: uppercase;
+		outline: 0;
+		color: #FFFFFF;
+    
+    
+    }
+    .Login{
+        text-decoration-color: white;
+        height: 130px;
+        width: 200px;
+    }
+    .uploadlabel{
+				color: #000000;
+
+			}
+    .loginlabe{
+				color: #FFFFFF;
+                
+			}    
 	
