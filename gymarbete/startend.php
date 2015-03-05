@@ -38,7 +38,7 @@ function top() {
 
 	if($_SESSION['admin'] == true){
 
-	echo"<li id = \"logga\">LOGGA UT </li>";
+	echo"<li id = \"logga\">LOGGA UT</li>";
 	
 	
 	}
@@ -46,11 +46,13 @@ function top() {
 	else{
 
 	
-	echo"<li id = \"logga\">LOGGA IN </li>";
+	echo"<li id = \"logga\">LOGGA IN</li>";
 	
 
 	}
-}
+}else{echo"<li id = \"logga\">LOGGA IN</li>";
+                        
+                    }
 	               	 			
     
 				echo"</ul>";
