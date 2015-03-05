@@ -53,7 +53,7 @@ function top() {
 		
      echo"<div id =\"div2\">
         <form method = \"POST\" action = \"check.php\" name=\"login\">\n";
-
+    /*
   				echo"<fieldset>\n";
       		    echo"<label for = \"username\">Användarnamn</label>\n";
       			echo"<input type =\"text\" name = \"username\">\n"; 
@@ -64,7 +64,8 @@ function top() {
   				echo"</form>";
         
         echo"</div>";
-		echo"</div>";
+		*/
+        echo"</div>";
 		}
 
 		
