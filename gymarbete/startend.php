@@ -36,7 +36,7 @@ function top() {
 
 	               	if(isset($_SESSION['admin'])){
 
-	if($_SESSION['admin'] == true){
+	if($_SESSION['admin']){
 
 	echo"<li id = \"logga\">LOGGA UT</li>";
 	
