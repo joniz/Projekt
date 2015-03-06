@@ -243,20 +243,13 @@
         margin-right: auto;
         
     }
-	#logga{
-        padding: 0em 1.5em;
-		text-decoration: none;
-		font-size: 0.90em;
-		font-weight: 200;
-		text-transform: uppercase;
-		outline: 0;
-		color: #FFFFFF;
+	
     
     
     }
     .Login{
         text-decoration-color: white;
-        height: 130px;
+        height: 110px;
         width: 200px;
     }
     .uploadlabel{

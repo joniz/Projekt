@@ -1,5 +1,6 @@
 <?php
 session_start();
+<<<<<<< HEAD
 
 if($_POST['action']=='logout'){
 
@@ -13,4 +14,16 @@ else{
 
 
 }
+=======
+	
+if(isset($_SESSION['admin'])){
+unset($_SESSION['user']);
+unset($_SESSION['admin']);    
+session_destroy();
+header('Location: index.php'); 
+}else{
+echo"Du ska inte vara här";
+}
+
+>>>>>>> origin/master
 ?>

@@ -30,27 +30,31 @@ function top() {
 					echo"<li class=\"active\"><a href=\"index.php\" accesskey=\"1\" title=\"\">Hem</a></li>";
 					echo"<li><a href=\"galleri.php\" accesskey=\"2\" title=\"\">Galleri</a></li>";
 					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
-					echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
+					
 
 
 
 	               	if(isset($_SESSION['admin'])){
 
-	if($_SESSION['admin'] == true){
-
-	echo"<li id = \"logga\">LOGGA UT </li>";
+	if($_SESSION['admin']){
+    echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
+	echo"<li><a href = \"logout.php\">LOGGA UT</a></li>";
 	
 	
 	}
 
 	else{
+            echo"<li><a id = \"logga\">LOGGA IN</a></li>";
+ }
+}else{
+    echo"<li><a id = \"logga\">LOGGA IN</a></li>";
+    
+                     
+                        
+                       
 
-	
-	echo"<li action=\"logout.php\" id=\"logga\">LOGGA IN </li>";
-	
-
-	}
-}
+                  
+                    }
 	               	 			
     
 				echo"</ul>";
@@ -98,7 +102,8 @@ echo"</div>";
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">     </script> 	
 
 <script>
-	$(document).ready(function(){
+	
+    $(document).ready(function(){
 
 
 
