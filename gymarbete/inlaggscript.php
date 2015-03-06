@@ -1,28 +1,18 @@
 <?php
-
+include_once('connectme.php');
 function test(){
 top();
-if(isset ($_REQUEST['knapp'])){
+if(isset ($_GET['knapp'])){
 
-$db=anslutdb();	
-$stmt = $db->prepare('insert into inlagg(rubrik,text,bild)values(:rubrik, "hård kodad text","hej.jpg")');
-$stmt->execute(array(':rubrik' => $_REQUEST['rubrik']));
-
+	
+$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,inlagg_bild)values(:rubrik, :text, :bild)');
+$stmt->execute(array(':rubrik, :text, :bild' => $_GET['inlaggsvar']));
+header('Location: index.php');
 }
 
-?>
-<br/>
-<br/>
-<br/>
-<form action="index.php" method="GET">
 
-<input type="hidden" name="page" value="test">
 
-Rubrik <input type="text" name="rubrik"/>
-<input type="submit" name="knapp">
-</form>
 
-<?php
 
 
 

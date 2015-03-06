@@ -9,8 +9,6 @@ if(!$anv==''&&!$losen==''){
 
 	
 
-	echo $anv;
-	echo $losen;
 
 	$dbh = db_connect();
 		$sth = $dbh->prepare('SELECT anv_id,anv_admin FROM tbl_anv WHERE anv_alias=:alias123 AND anv_losenord=:losenord123');
