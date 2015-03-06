@@ -18,7 +18,7 @@ echo"<input type=\"textarea\" name=\"text\" id=\"text\">";
 echo"</form>";
 
 }else{
-    echo"<p>Du får inte vara här</p>";
+    echo"<p>Du får inte vara här...fgt</p>";
 }
 
 
