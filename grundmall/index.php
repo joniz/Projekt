@@ -6,7 +6,7 @@ include_once("info.php");
 include_once("produkter.php");
 include_once("test.php");
 include_once( 'dbconnet.php');
-$page_ok=filter_input(INPUT_GET,'page',FILTER_SANITIZE_URL);
+$page_ok=filter_input(INPUT_GET,'page',FILTER_SANITIZE_STRING);
 
 if (isset($page_ok)){
 

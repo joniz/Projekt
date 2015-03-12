@@ -4,7 +4,7 @@
 
 function test(){
 //include_once 'inlagg.php';
-
+$page_ok=filter_input(INPUT_GET,'rubrik, text, bild',FILTER_SANITIZE_STRING);
 
 
 
