@@ -6,7 +6,7 @@ top();
 
 if(isset($_SESSION['admin'])){
 ?>  
-    <form action="index.php" method="GET">
+    <form action="inlaggscript.php" method="GET">
 
 <input type="hidden" name="page" value="test">
 
