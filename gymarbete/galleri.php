@@ -13,4 +13,6 @@ for ($i=0; $i<count($files); $i++) {
 //Read more: http://www.phpmagicbook.com/display-images-from-folder/#ixzz3RXLflTXF
 
 bottom();
+
+
 ?>
