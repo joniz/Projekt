@@ -1,10 +1,12 @@
 <?php
 session_start();
 include_once("startend.php");
+include_once('inlaggscript.php');
 
 top();
-echo $_GET['inlaggsvar'];
+ //echo $rubrik; 	
 bottom();
+
 
 ?>
 	 

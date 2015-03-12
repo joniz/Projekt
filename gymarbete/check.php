@@ -31,5 +31,4 @@ if(!$anv==''&&!$losen==''){
 		header('Location:index.php');
 	}
 }
-
 ?> 

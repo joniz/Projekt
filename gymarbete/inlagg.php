@@ -5,8 +5,8 @@ include_once("startend.php");
 top();
 
 if(isset($_SESSION['admin'])){
-?>   
-    <form action="inlaggscript.php" method="GET">
+?>  
+    <form action="index.php" method="GET">
 
 <input type="hidden" name="page" value="test">
 
