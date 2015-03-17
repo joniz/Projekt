@@ -70,7 +70,7 @@ function top() {
 
 
 
-
+        	
 
 
 			echo"<div id=\"content\">\n";

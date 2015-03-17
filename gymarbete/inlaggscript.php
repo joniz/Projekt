@@ -4,9 +4,9 @@
 
 function test(){
 //include_once 'inlagg.php';
-
-
-
+$rubrik_safe = filter_input(INPUT_GET,'rubrik',FILTER_SANITIZE_STRING);
+$text_safe = filter_input(INPUT_GET,'text',FILTER_SANITIZE_STRING);
+$bild_safe = filter_input(INPUT_GET,'bild',FILTER_SANITIZE_STRING);
 
 if(isset ($_GET['knapp'])){
 	include_once('connectme.php');
@@ -27,10 +27,9 @@ if(isset ($_GET['knapp'])){
 
 
 
-	$stmt->execute(array(':rubrik' => $_REQUEST['rubrik'], ':text1' =>$_REQUEST['text'] , ':bild' => $_REQUEST['bild']));
+	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe));
 	
-	
-
+	header('Location: index.php');
 
 }
 
