@@ -2,6 +2,7 @@
 session_start();
 include_once("startend.php");
 
+
 top();
 
 if(isset($_SESSION['admin'])){
@@ -10,9 +11,9 @@ if(isset($_SESSION['admin'])){
 
 <input type="hidden" name="page" value="test">
 
-<p>Rubrik</p> <input type="text" name="rubrik"/>
-<p>Text</p> <input type="text" name="text"/>
-<p>Bild</p> <input type="file" name="bild"/>
+<p>Rubrik</p> <input type="text" name="f_rubrik"/>
+<p>Text</p> <textarea type="text" name="f_text"></textarea>
+<p>Bild</p> <input type="file" name="f_bild"/>
 <input type="submit" name="knapp">
 </form>
 <?php

@@ -17,10 +17,35 @@ top();
 
 $stmt = $dbh->query('SELECT * FROM tbl_inlagg order by inlagg_id desc');
  
-while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-   echo '<h1>'.$row['inlagg_rubrik'].'</h1> '.$row['inlagg_text'].''.$row['inlagg_bild'];
+/*while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
+   echo '<h1>'.$inlagg['inlagg_rubrik'].'</h1> '.$inlagg['inlagg_text'].''.$inlagg['inlagg_bild'];
 
-}
+}*/
+
+while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
+				printf("
+					<div id='inlaggarea'>
+					<h1>%s</h1>
+					<p>%s</p>
+					<img src='file:///C:/Users/g132032/Dropbox/Webbserverprogrammering/www/Projekt/gymarbete/uploads/%s'></img>
+					
+					
+
+					",
+
+					$inlagg['inlagg_rubrik'],
+					$inlagg['inlagg_text'],
+					$inlagg['inlagg_bild']
+					
+					  );
+			}
+
+
+
+			$dbh = null;
+
+
+
 
 
 
