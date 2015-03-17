@@ -3,6 +3,16 @@
 		height: 100%;
 	}
 
+	#inlaggarea{
+		border:1px solid black;
+		position:absolute;
+     	margin-left: 25%;
+     	margin-right: 25%;
+     	width: 50%;
+     	background:red; 
+     	margin-top: 10px;
+	}
+
 	
 	body
 	{

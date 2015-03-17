@@ -4,9 +4,9 @@
 
 function test(){
 //include_once 'inlagg.php';
-$rubrik_safe = filter_input(INPUT_GET,'rubrik',FILTER_SANITIZE_STRING);
-$text_safe = filter_input(INPUT_GET,'text',FILTER_SANITIZE_STRING);
-$bild_safe = filter_input(INPUT_GET,'bild',FILTER_SANITIZE_STRING);
+$rubrik_safe = filter_input(INPUT_GET,'f_rubrik',FILTER_SANITIZE_STRING);
+$text_safe = filter_input(INPUT_GET,'f_text',FILTER_SANITIZE_STRING);
+$bild_safe = filter_input(INPUT_GET,'f_bild',FILTER_SANITIZE_STRING);
 
 if(isset ($_GET['knapp'])){
 	include_once('connectme.php');
