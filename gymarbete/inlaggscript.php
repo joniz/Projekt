@@ -27,10 +27,9 @@ if(isset ($_GET['knapp'])){
 
 
 
-	$stmt->execute(array(':rubrik' => $_REQUEST['rubrik'], ':text1' =>$_REQUEST['text'] , ':bild' => $_REQUEST['bild']));
+	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe));
 	
-	
-
+	header('Location: index.php');
 
 }
 
