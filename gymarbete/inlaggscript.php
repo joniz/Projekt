@@ -20,6 +20,9 @@ if(isset ($_GET['knapp'])){
   //  echo $row['inlagg_rubrik'].' '.$row['inlagg_text']; //etc...
 //}
 
+	if (isset($_GET['f_bild'])) {
+		
+	
 
 
 	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,inlagg_bild)values(:rubrik, :text1, :bild)');
@@ -29,14 +32,25 @@ if(isset ($_GET['knapp'])){
 
 	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe));
 	
+	
+
+}else{
+	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text)values(:rubrik, :text1)');
+	
+
+
+
+	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe));
+	
+	
+
+}
 	header('Location: index.php');
-
 }
+} 
 
-}
 
 test();
-
 
 
 ?>

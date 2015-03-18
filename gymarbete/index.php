@@ -28,7 +28,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					<div id='inlaggarea'>
 					<h1>%s</h1>
 					<p>%s</p>
-					<img src='file:///C:/Users/g132032/Dropbox/Webbserverprogrammering/www/Projekt/gymarbete/uploads/%s'></img>
+					<img src='file:///C:/Users/g132029/Dropbox/Webbserverprogrammering/www/Projekt/gymarbete/uploads/%s'></img>
 					
 					
 
@@ -46,10 +46,9 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$dbh = null;
 
 
->>>>>>> ef873c63bcb9a9ff67fde069c3e04d7043b12e4e
 
 
-}
+
 
 
 
