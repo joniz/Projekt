@@ -21,7 +21,16 @@ if(isset($_SESSION['admin'])){
     echo"<p>Du får inte vara här...fgt</p>";
 }
 
+?>
+<script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"> </script>
+<script>
+tinymce.init({
+    selector: "textarea"
+ });
+</script>
 
+
+<?php
 
 
 
