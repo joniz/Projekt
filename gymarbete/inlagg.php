@@ -6,17 +6,9 @@ include_once("startend.php");
 top();
 
 if(isset($_SESSION['admin'])){
-?>  
-    <form action="inlaggscript.php" method="GET">
+ 
+include_once 'formularinlagg.php';
 
-<input type="hidden" name="page" value="test">
-
-<p>Rubrik</p> <input type="text" name="f_rubrik"/>
-<p>Text</p> <textarea type="text" name="f_text"></textarea>
-<p>Bild</p> <input type="file" id="fileToUpload" name="fileToUpload"/>
-<input type="submit" name="knapp">
-</form>
-<?php
 }else{
     echo"<p>Du får inte vara här...fgt</p>";
 }
