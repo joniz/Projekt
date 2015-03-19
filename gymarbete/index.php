@@ -25,12 +25,13 @@ $stmt = $dbh->query('SELECT * FROM tbl_inlagg ORDER BY inlagg_id DESC');
 
 while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				printf("
+					
 					<div id='inlaggarea'>
-					<h1>%s</h1>
+					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
-					<img src='file:///C:/Users/g132029/Dropbox/Webbserverprogrammering/www/Projekt/gymarbete/uploads/%s'></img>
-					
-					
+					<img src=file:///C:/Users/g132029/Dropbox/Webbserverprogrammering/www/Projekt/gymarbete/uploads/%s></img>
+					</div>
+					<hr>
 
 					",
 
