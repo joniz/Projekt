@@ -11,7 +11,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
-if(isset($_GET["submit"])) {
+if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
@@ -27,7 +27,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 500000000000000000000000000000000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
@@ -58,9 +58,9 @@ if ($uploadOk == 0) {
 //include_once 'inlagg.php';
 $rubrik_safe = filter_input(INPUT_GET,'f_rubrik',FILTER_SANITIZE_STRING);
 $text_safe = filter_input(INPUT_GET,'f_text',FILTER_SANITIZE_STRING);
-$bild_safe = filter_input(INPUT_GET,'f_bild',FILTER_SANITIZE_STRING);
+$bild_safe = filter_input(INPUT_GET,'fileToUpload',FILTER_SANITIZE_STRING);
 
-if(isset ($_GET['knapp'])){
+if(isset ($_POST['submit'])){
 	include_once('connectme.php');
 	$dbh = db_connect();
 
@@ -72,7 +72,7 @@ if(isset ($_GET['knapp'])){
   //  echo $row['inlagg_rubrik'].' '.$row['inlagg_text']; //etc...
 //}
 
-	if (isset($_GET['f_bild'])) {
+	if (isset($_POST['fileToUpload'])) {
 		
 	
 
