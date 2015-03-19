@@ -15,11 +15,11 @@
 	}
 
 	#inlaggarea{
-		border:2px solid blue;
+		
 		text-align:center;
      	margin-left: 25%;
      	width: 700px;
-     	background:red; 
+     	 
      	margin-top: 10px;
 	}
 
@@ -250,9 +250,7 @@
 		text-align: center;
 		}
 
-	div{
-		border: 3px solid yellow;
-	}
+
     
     #div2{ 
         

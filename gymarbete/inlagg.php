@@ -13,7 +13,7 @@ if(isset($_SESSION['admin'])){
 
 <p>Rubrik</p> <input type="text" name="f_rubrik"/>
 <p>Text</p> <textarea type="text" name="f_text"></textarea>
-<p>Bild</p> <input type="file" name="f_bild" value = "Sweg"/>
+<p>Bild</p> <input type="file" id="fileToUpload" name="fileToUpload"/>
 <input type="submit" name="knapp">
 </form>
 <?php
