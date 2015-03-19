@@ -1,6 +1,5 @@
 <?php
-if (isset(f_bild)) {
-    # code...
+
 
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -23,7 +22,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 500000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
@@ -44,5 +43,5 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-}
+
 ?>
