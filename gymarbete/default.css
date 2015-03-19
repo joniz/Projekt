@@ -170,6 +170,7 @@
 		text-align: center;
 		position: fixed;
 		background-color: #000000;
+		z-index: 5;
     }
 
 	#logo span a
@@ -243,7 +244,8 @@
         
         margin-left: 180px; 
         border: solid black 5px;
-	    position: fixed;
+	    position: absolute;
+	    z-index: 2;
         display: none;
         background-color: black;
         

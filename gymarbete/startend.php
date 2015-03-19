@@ -27,9 +27,9 @@ function top() {
 
 			echo"<div id=\"menu\">";
 				echo"<ul>";
-					echo"<li class=\"active\"><a href=\"index.php\" accesskey=\"1\" title=\"\">Hem</a></li>";
-					echo"<li><a href=\"galleri.php\" accesskey=\"2\" title=\"\">Galleri</a></li>";
-					echo"<li><a href=\"omoss.php\" accesskey=\"3\" title=\"\">Om oss</a></li>";
+					echo"<li class=\"active\"><a href=\"index.php\"  title=\"\">Hem</a></li>";
+					echo"<li><a href=\"galleri.php\"  title=\"\">Galleri</a></li>";
+					echo"<li><a href=\"omoss.php\"  title=\"\">Om oss</a></li>";
 
 
 
@@ -37,7 +37,7 @@ function top() {
 	               	if(isset($_SESSION['admin'])){
 
 	if($_SESSION['admin']){
-    echo"<li><a href=\"inlagg.php\" accesskey=\"4\" title=\"\">Inlägg</a></li>";
+    echo"<li><a href=\"inlagg.php\"  title=\"\">Inlägg</a></li>";
 	echo"<li><a href = \"logout.php\">LOGGA UT</a></li>";
 
 
