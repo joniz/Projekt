@@ -1,4 +1,4 @@
-<form action="inlaggscript.php" method="POST" enctype="multipart/form-data">
+<form action="inlaggscript.php" method="GET" enctype="multipart/form-data">
 
 <input type="hidden" name="page" value="test">
 

@@ -60,7 +60,7 @@ $rubrik_safe = filter_input(INPUT_GET,'f_rubrik',FILTER_SANITIZE_STRING);
 $text_safe = filter_input(INPUT_GET,'f_text',FILTER_SANITIZE_STRING);
 $bild_safe = filter_input(INPUT_GET,'fileToUpload',FILTER_SANITIZE_STRING);
 
-if(isset ($_POST['submit'])){
+if(isset ($_GET['submit'])){
 	include_once('connectme.php');
 	$dbh = db_connect();
 
@@ -72,7 +72,7 @@ if(isset ($_POST['submit'])){
   //  echo $row['inlagg_rubrik'].' '.$row['inlagg_text']; //etc...
 //}
 
-	if (isset($_POST['fileToUpload'])) {
+	if (isset($_GET['fileToUpload'])) {
 		
 	
 
