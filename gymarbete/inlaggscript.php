@@ -1,6 +1,6 @@
 <?php
 
-/*
+
 
 function test(){
 
@@ -48,10 +48,11 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+}
 
 
 
-*/
+
 
 
 
@@ -97,12 +98,15 @@ if(isset ($_GET['submit'])){
 	
 
 }
+    
 	header('Location: index.php'); 
 }
+
+
  
 
 
-//test();
+
 
 
 ?>
