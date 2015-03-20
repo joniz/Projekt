@@ -1,13 +1,13 @@
 <?php
 
 
-
-function test(){
-
+if(isset($_REQUEST["submit"])){
 
 
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+
+echo $target_file."<br><br>";
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
@@ -48,7 +48,7 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-}
+
 
 
 
@@ -57,11 +57,11 @@ if ($uploadOk == 0) {
 
 
 //include_once 'inlagg.php';
-$rubrik_safe = filter_input(INPUT_GET,'f_rubrik',FILTER_SANITIZE_STRING);
-$text_safe = filter_input(INPUT_GET,'f_text',FILTER_SANITIZE_STRING);
-$bild_safe = filter_input(INPUT_GET,'fileToUpload',FILTER_SANITIZE_STRING);
+$rubrik_safe = filter_input(INPUT_POST,'f_rubrik',FILTER_SANITIZE_STRING);
+$text_safe = filter_input(INPUT_POST,'f_text',FILTER_SANITIZE_STRING);
+$bild_safe =$_FILES["fileToUpload"]["name"]; 
+echo $_FILES["fileToUpload"]["name"];
 
-if(isset ($_GET['submit'])){
 	include_once('connectme.php');
 	$dbh = db_connect();
 
@@ -73,7 +73,7 @@ if(isset ($_GET['submit'])){
   //  echo $row['inlagg_rubrik'].' '.$row['inlagg_text']; //etc...
 //}
 
-	if (isset($_GET['fileToUpload'])) {
+	if (isset($_FILES["fileToUpload"]["name"])) {
 		
 	
 
@@ -99,7 +99,7 @@ if(isset ($_GET['submit'])){
 
 }
     
-	header('Location: index.php'); 
+//	header('Location: index.php'); 
 }
 
 
