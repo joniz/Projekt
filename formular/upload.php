@@ -1,11 +1,4 @@
 <?php
-
-/*
-
-function test(){
-
-
-
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -27,7 +20,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 50000000000000) {
+if ($_FILES["fileToUpload"]["size"] > 500000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
@@ -48,61 +41,4 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-
-
-
-*/
-
-
-
-//include_once 'inlagg.php';
-$rubrik_safe = filter_input(INPUT_GET,'f_rubrik',FILTER_SANITIZE_STRING);
-$text_safe = filter_input(INPUT_GET,'f_text',FILTER_SANITIZE_STRING);
-$bild_safe = filter_input(INPUT_GET,'fileToUpload',FILTER_SANITIZE_STRING);
-
-if(isset ($_POST['submit'])){
-	include_once('connectme.php');
-	$dbh = db_connect();
-
-
-
-//$stmt = $dbh->query('SELECT * FROM tbl_inlagg');
- 
-//while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-  //  echo $row['inlagg_rubrik'].' '.$row['inlagg_text']; //etc...
-//}
-
-	if (isset($_POST['fileToUpload'])) {
-		
-	
-
-
-	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,inlagg_bild)values(:rubrik, :text1, :bild)');
-	
-
-
-
-	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe));
-	
-	
-
-}else{
-	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text)values(:rubrik, :text1)');
-	
-
-
-
-	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe));
-	
-	
-
-}
-	header('Location: index.php'); 
-}
- 
-
-
-//test();
-
-
 ?>
