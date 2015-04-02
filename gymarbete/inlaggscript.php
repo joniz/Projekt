@@ -101,7 +101,7 @@ $bild_safe =$_FILES["fileToUpload"]["name"];
 
 }
     
-//	header('Location: index.php'); 
+header('Location: index.php'); 
 }
 
 

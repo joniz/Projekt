@@ -73,6 +73,7 @@
 	
 	ol, ul
 	{
+		color: #000000;
 		padding: 0;
 		list-style: none;
 	}
