@@ -29,7 +29,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					<div id='inlaggarea'>
 					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
-					<img src='uploads/%s'></img>
+					<img src='uploads/%s' class='inlaggbild'></img>
 					</div>
 					<hr>
 
