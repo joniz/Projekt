@@ -60,9 +60,9 @@ if ($uploadOk == 0) {
 
 //include_once 'inlagg.php';
 $rubrik_safe = filter_input(INPUT_POST,'f_rubrik',FILTER_SANITIZE_STRING);
-$text_safe = filter_input(INPUT_POST,'f_text',FILTER_SANITIZE_STRING);
+$text_safe = $_REQUEST['f_text'];
 $bild_safe =$_FILES["fileToUpload"]["name"]; 
-echo $_FILES["fileToUpload"]["name"];
+
 
 	include_once('connectme.php');
 	$dbh = db_connect();
