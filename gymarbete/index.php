@@ -30,6 +30,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
 					<img src='uploads/%s' class='inlaggbild'></img>
+					<a href=\"delete.php?del=".$inlagg["inlagg_id"]."\">delte</a>
 					</div>
 					<hr>
 
