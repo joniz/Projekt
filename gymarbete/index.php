@@ -30,7 +30,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
 					<img src='uploads/%s' class='inlaggbild'></img>
-					<a href=\"delete.php?del=".$inlagg["inlagg_id"]."\">delte</a>
+					</br>
 					</div>
 					<hr>
 
@@ -41,7 +41,18 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					$inlagg['inlagg_bild']
 					
 					  );
-			}
+				
+	if(isset($_SESSION['admin'])){
+
+		if($_SESSION['admin']){
+    	echo"<a href=\"delete.php?del=".$inlagg["inlagg_id"]."\">Delete</a>";
+		}
+
+		else{
+ 			echo" ";
+ 		}
+	}
+}
 
 
 

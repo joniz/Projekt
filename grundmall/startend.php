@@ -5,6 +5,7 @@ function top() {
         
 		echo"<html>\n";
       echo"<head>\n";
+      
 	  
 		echo" <meta  charset=utf-8 />";
 		

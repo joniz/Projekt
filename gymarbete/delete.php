@@ -6,7 +6,7 @@ include_once('connectme.php');
 
   $stmt = $dbh->prepare('delete FROM tbl_inlagg WHERE inlagg_id = :del');
     $stmt->execute(array('del' => $_GET["del"]));
-header("Location:index.php?page=info");
+header("Location:index.php");
 
 
 
