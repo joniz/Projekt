@@ -17,8 +17,14 @@ include_once 'formularinlagg.php';
 <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"> </script>
 <script>
 tinymce.init({
-    selector: "textarea"
+    
+    selector: "textarea",
+    
+ 	
  });
+
+ 
+
 </script>
 
 
