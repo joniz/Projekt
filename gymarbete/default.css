@@ -3,13 +3,13 @@
 		height: 100%;
 	}
 
-	.inlaggbild{
-		max-width: 700px;
-	}
+	img.inlaggbild{
+		max-width: 800px;
+		}
 
 	.inlaggh1{
 		position: center;
-		
+
 	}
 
 	hr{
@@ -31,7 +31,7 @@
 		text-align: center;
 	}
 
-	input[type=file]{ 
+	input[type=file]{
         color: #000000;
         border: 1px solid #000000;
     }
@@ -39,15 +39,16 @@
 
 
 	#inlaggarea{
-		
+
 		text-align:center;
-     	margin-left: 25%;
-     	width: 700px;
-     	 
-     	margin-top: 10px;
+    width: 800px;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+
 	}
 
-	
+
 	body
 	{
 		margin: 0px;
@@ -57,33 +58,33 @@
 		font-size: 12pt;
 		color: #E5EEFF;
 	}
-	
-	
+
+
 	h1, h2, h3
 	{
 		margin: 0;
 		padding: 0;
 		color: #000000;
 	}
-	
+
 	p, ol, ul
 	{
 		margin-top: 0;
 	}
-	
+
 	ol, ul
 	{
 		color: #000000;
 		padding: 0;
 		list-style: none;
 	}
-	
+
 	p
 	{
 		line-height: 100%;
 		color: #000000;
 	}
-	
+
 	.container
 	{
 		margin: 0px auto;
@@ -103,7 +104,7 @@
     -webkit-border-radius: 1px; border-radius:20px;
 	/*float: right;*/
 	width: 25%;
-	
+
    	}
 
    	.bildomoss2{
@@ -112,7 +113,7 @@
 	/*float: right;*/
 	width: 25%;
 	margin-bottom: 8.5em;
-	
+
    	}
     ul.contact
 	{
@@ -120,7 +121,7 @@
 		padding: 2em 0em 0em 0em;
 		list-style: none;
 	}
-	
+
 	ul.contact li
 	{
 		display: inline-block;
@@ -128,19 +129,19 @@
 		font-size: 1em;
 		color: #000000;
 	}
-	
+
 	ul.contact li span
 	{
 		display: none;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	ul.contact li a
 	{
 		color: #000000;
 	}
-	
+
 	ul.contact li a:before
 	{
 		display: inline-block;
@@ -163,7 +164,7 @@
 		font-size: 1em;
 		color: #FFF;
 	}
-	
+
 	.button:before
 	{
 		display: inline-block;
@@ -180,13 +181,13 @@
 	{
 		margin-bottom: 3em;
 	}
-	
+
 	.title h2
 	{
 		font-size: 2.8em;
 		color: #FFFFFF;
 	}
-	
+
 	.title .byline
 	{
 		font-size: 1.1em;
@@ -196,7 +197,7 @@
 	{
 		overflow: hidden;
 		padding: 6em 0em 2em 0em;
-		
+
 
 	}
 
@@ -215,19 +216,19 @@
 	.test img{
 		padding-top: 0.3em;
         height: 40px;
-        
+
 	}
     .logg{
-    
+
     float: left;
     padding-top: 0.3em;
     display: inline-block;
     }
     .face{
-    
+
     float: right;
     padding-right: 1em;
-    
+
 }
     #menu
 	{
@@ -237,19 +238,19 @@
 		border: solid 1px #000000;
         float:left;
 	}
-	
+
 	#menu ul
 	{
 		display: inline-block;
 		padding: 0em 0em;
-		
+
 	}
-	
+
 	#menu li
 	{
 		display: inline-block;
 	}
-	
+
 	#menu li a, #menu li span
 	{
 		display: inline-block;
@@ -260,7 +261,7 @@
 		text-transform: uppercase;
 		outline: 0;
 		color: #FFFFFF;
-		
+
 	}
 
 	#menu a:hover{
@@ -276,25 +277,25 @@
 		}
 
 
-    
-    #div2{ 
-        
-        margin-left: 180px; 
-        
+
+    #div2{
+
+        margin-left: 180px;
+
 	    position: fixed;
 	    z-index: 2;
         display: none;
         background-color: black;
-        
+
 }
     form{
         margin-left: auto;
         margin-right: auto;
-        
+
     }
-	
-    
-    
+
+
+
     }
     .Login{
         text-decoration-color: white;

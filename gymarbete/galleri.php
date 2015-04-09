@@ -4,9 +4,9 @@ include_once("startend.php");
 
 top();
 
-$files = glob("uploads/*.*"); 
+$files = glob("uploads/*.*");
 for ($i=0; $i<count($files); $i++) {
- $num = $files[$i]; 
+ $num = $files[$i];
  echo '<a href="'.$num.'"><img src="'.$num.'" class="galleribild" alt="random image"></a>';
 }
 
