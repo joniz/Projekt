@@ -62,7 +62,7 @@ function top() {
 
         </div>
 
-    <div class="face"><a class ="test" 	href="\"><img src="fbliten.png"></a>
+    <div class="face"><a class ="test" 	href=""><img src="fbliten.png"></a>
 
     </div>
 
