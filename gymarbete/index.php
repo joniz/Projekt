@@ -46,8 +46,11 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					  );
 
 
-				if($_SESSION['admin'] == 1){
-    				echo"<a class =\"tabort\" href=\"delete.php?del=".$inlagg["inlagg_id"]."\">Ta bort inlägg</a>";
+
+
+				if(isset($_SESSION['admin'])){
+    				echo"<a class = \"tabort\" href=\"delete.php?del=".$inlagg["inlagg_id"]."\">Ta bort inlägg</a>";
+
 				}else{
  						echo" ";
  		}
