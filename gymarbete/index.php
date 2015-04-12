@@ -30,6 +30,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
 					<img src='uploads/%s' class='inlaggbild'></img>
+					<p>%s</p>
 					</br>
 					</div>
 
@@ -39,16 +40,18 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 					$inlagg['inlagg_rubrik'],
 					$inlagg['inlagg_text'],
-					$inlagg['inlagg_bild']
+					$inlagg['inlagg_bild'],
+					$inlagg['inlagg_datum']
 
 					  );
 
 
 				if($_SESSION['admin'] == 1){
-    				echo"<a class = \"tabort\" href=\"delete.php?del=".$inlagg["inlagg_id"]."\">Ta bort inlägg</a>";
+    				echo"<a class =\"tabort\" href=\"delete.php?del=".$inlagg["inlagg_id"]."\">Ta bort inlägg</a>";
 				}else{
  						echo" ";
  		}
+
 	echo"<hr>";
 }
 
