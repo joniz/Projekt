@@ -36,23 +36,17 @@ function top() {
 
 	               	if(isset($_SESSION['admin'])){
 
-	if($_SESSION['admin']){
+	
     echo"<li><a href=\"inlagg.php\"  title=\"\">Inlägg</a></li>";
 	echo"<li><a href = \"logout.php\">LOGGA UT</a></li>";
 
-
-	}
-
-	else{
-            echo"<li><a id = \"logga\">LOGGA IN</a></li>";
- }
-}else{
+} else{
     echo"<li><a id = \"logga\">LOGGA IN</a></li>";
 
 
 
 
-
+ 
 
                     }
 

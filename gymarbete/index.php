@@ -24,12 +24,36 @@ $stmt = $dbh->query('SELECT * FROM tbl_inlagg ORDER BY inlagg_id DESC');
 }*/
 
 while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
-				printf("
+				
+				
+				echo '<div id= "inlaggarea">';
+					echo '<h1 class= "inlaggh1">'.$inlagg['inlagg_rubrik'].'</h1>';
+					echo '<p>'.$inlagg['inlagg_text'] .'</p>';
+
+					if(!$inlagg['inlagg_bild'] == null){
+					echo '<img src="uploads/'.$inlagg['inlagg_bild'].'" class="inlaggbild"></img>'; echo "</br>";
+
+					}else{
+						echo "";
+					}
+
+					echo "</br>";
+					echo '<p>'.$inlagg['inlagg_tid'].'</p>';
+					
+					echo"</br>";
+					echo"</div>";
+
+				/*printf("
 
 					<div id='inlaggarea'>
 					<h1 class='inlaggh1'>%s</h1>
 					<p>%s</p>
+
+						
 					<img src='uploads/%s' class='inlaggbild'></img>
+					
+
+
 					<p>%s</p>
 					</br>
 					</div>
@@ -41,11 +65,12 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					$inlagg['inlagg_rubrik'],
 					$inlagg['inlagg_text'],
 					$inlagg['inlagg_bild'],
-					$inlagg['inlagg_datum']
+					$inlagg['inlagg_tid']
 
 					  );
-
-
+			
+				*/
+			
 
 
 				if(isset($_SESSION['admin'])){
