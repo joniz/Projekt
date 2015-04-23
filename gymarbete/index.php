@@ -32,7 +32,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 					if(!$inlagg['inlagg_bild'] == null){
 					echo '<img src="uploads/'.$inlagg['inlagg_bild'].'" class="inlaggbild"></img>'; echo "</br>";
-
+					
 					}else{
 						echo "";
 					}
