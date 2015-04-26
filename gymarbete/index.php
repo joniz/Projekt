@@ -38,7 +38,7 @@ while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 					}
 
 					echo "</br>";
-					echo '<p>'.$inlagg['inlagg_tid'].'</p>';
+					echo '<p>'.$inlagg['inlagg_datum'].'</p>';
 					
 					echo"</br>";
 					echo"</div>";
