@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 
 if(isset($_REQUEST["submit"])){
@@ -64,6 +65,7 @@ $text_safe = $_REQUEST['f_text'];
 $bild_safe = $_FILES["fileToUpload"]["name"]; 
 
 
+
 	include_once('connectme.php');
 	$dbh = db_connect();
 
@@ -80,22 +82,22 @@ $bild_safe = $_FILES["fileToUpload"]["name"];
 	
 
 
-	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,inlagg_bild)values(:rubrik, :text1, :bild)');
+	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,inlagg_bild,anv_id_fk)values(:rubrik, :text1, :bild, :id)');
 	
 
 
 
-	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe));
+	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe , ':bild' => $bild_safe, ':id' => $_SESSION['user']));
 	
 	
 
 }else{
-	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text)values(:rubrik, :text1)');
+	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text)values(:rubrik, :text1, ":id")');
 	
 
 
 
-	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe));
+	$stmt->execute(array(':rubrik' => $rubrik_safe, ':text1' => $text_safe, ':id' => $_SESSION['user']));
 	
 	
 

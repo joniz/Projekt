@@ -11,7 +11,7 @@ if(!$anv==''&&!$losen==''){
 
 
 	$dbh = db_connect();
-		$sth = $dbh->prepare('SELECT anv_id,anv_admin FROM tbl_anv WHERE anv_alias=:alias123 AND anv_losenord=:losenord123');
+		$sth = $dbh->prepare('SELECT anv_id_pk,anv_admin FROM tbl_anv WHERE anv_alias=:alias123 AND anv_losenord=:losenord123');
 		$sth->execute(array(':alias123'=>$anv, ':losenord123'=>$losen));
 		$affected_rows = $sth->rowCount();
 		$svar = $sth->fetch(PDO::FETCH_ASSOC);
@@ -20,7 +20,7 @@ if(!$anv==''&&!$losen==''){
 
 
 	if($affected_rows == 1){
-		$_SESSION['user'] = $svar['anv_id'];
+		$_SESSION['user'] = $svar['anv_id_pk'];
 		$_SESSION['admin'] = $svar['anv_admin'];
 		session_write_close();
 

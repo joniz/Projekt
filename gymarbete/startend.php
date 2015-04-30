@@ -42,13 +42,7 @@ function top() {
 
 } else{
     echo"<li><a id = \"logga\">LOGGA IN</a></li>";
-
-
-
-
- 
-
-                    }
+     }
 
 ?>
 				</ul>
@@ -99,21 +93,21 @@ echo"</div>";
 
 <script>
 
-    $(document).ready(function(){
+  $(document).ready(function () {
+    "use strict";
 
 
-
-	$("#logga").click(function(){
-  	$("#div2").slideToggle("fast");
-});
+     $("#logga").click(function () {
+         $("#div2").slideToggle("fast");
+    });
 });
 </script>
 
 
 <?php
 
-	  echo"  </body>\n";
-      echo"</html>\n";
+	  echo "</body>\n";
+      echo "</html>\n";
 }
 
 ?>
