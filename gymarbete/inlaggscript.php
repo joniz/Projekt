@@ -92,7 +92,7 @@ $bild_safe = $_FILES["fileToUpload"]["name"];
 	
 
 }else{
-	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text)values(:rubrik, :text1, ":id")');
+	$stmt = $dbh->prepare('INSERT INTO tbl_inlagg(inlagg_rubrik,inlagg_text,anv_id_fk)values(:rubrik, :text1, ":id")');
 	
 
 

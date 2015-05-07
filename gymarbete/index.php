@@ -27,6 +27,7 @@ $stmt = $dbh->query('SELECT * FROM tbl_inlagg ORDER BY inlagg_id DESC');
    echo '<h1>'.$inlagg['inlagg_rubrik'].'</h1> '.$inlagg['inlagg_text'].''.$inlagg['inlagg_bild'];
 
 }*/
+$anv_id_pk=null;
 $namn=null;
 while($inlagg = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				
@@ -37,6 +38,7 @@ while($forfattare = $sth->fetch(PDO::FETCH_ASSOC)) {
 
 
 $namn=$forfattare['anv_alias'];
+$anvid=$forfattare['anv_id_pk'];
 
 }
 
@@ -93,7 +95,7 @@ $namn=$forfattare['anv_alias'];
 				}else{
  						echo"";
  		}
- 		echo "<a href='' class='forfattare'>Av: ".$namn."</a>";
+ 		echo "<a href='anvandarsida.php?id=".$anvid."' class='forfattare'>Av: ".$namn."</a>";
 
 	echo"<hr>";
 }
